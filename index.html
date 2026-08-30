@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>VolleyMotion</title>
+
+  <script>
+    const androidURL =
+      "https://play.google.com/store/apps/details?id=com.its7.volleymotion";
+
+    const iosURL =
+      "YOUR_APPLE_APP_STORE_LINK";
+
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(ua)) {
+      window.location.replace(androidURL);
+    }
+    else if (/iPad|iPhone|iPod/.test(ua)) {
+      window.location.replace(iosURL);
+    }
+  </script>
+</head>
+
+<body style="text-align:center;font-family:Arial;padding-top:60px">
+
+  <h1>VolleyMotion</h1>
+  <p>Get VolleyMotion for your device</p>
+
+  <p>
+    <a href="YOUR_APPLE_APP_STORE_LINK">
+      Download for iPhone
+    </a>
+  </p>
+
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.its7.volleymotion">
+      Download for Android
+    </a>
+  </p>
+
+</body>
+</html>

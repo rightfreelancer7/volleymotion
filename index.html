@@ -115,7 +115,33 @@
       .store-badge{height:50px}
     }
 
-  </style>
+  
+    .stores{
+      display:flex;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:22px;
+    }
+    .store-badge-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      line-height:0;
+    }
+    .store-badge{
+      display:block;
+      height:54px;
+      width:auto;
+      max-width:100%;
+      object-fit:contain;
+    }
+    @media(max-width:540px){
+      .store-badge{height:48px}
+    }
+
+</style>
 </head>
 <body>
 <header><div class="wrap"><nav><div class="brand">🏐 VolleyMotion</div><a class="navlink" href="#download">Download</a></nav></div></header>
@@ -123,11 +149,13 @@
 <main>
   <div class="wrap hero">
     <div>
-      <div class="tag">INTERACTIVE VOLLEYBALL MOTION GAME</div>
+      <div class="tag">INTERACTIVE VOLLEYBALL FITNESS & MOVEMENT GAME</div>
       <h1>Move.<br>Jump.<br><span class="accent">Play.</span></h1>
       <p class="lead">
-        <strong>VolleyMotion</strong> is an interactive volleyball game that combines mobile gameplay with real movement.
-        Using your phone camera, you respond with real movements such as arm swings, jumps and two-hand blocks while following visual and voice cues.
+        <strong>VolleyMotion</strong> is an interactive volleyball movement game intended to get people
+        moving their bodies and staying active through real physical actions. Using your phone camera,
+        you respond to the volleyball action with real arm swings, jumps and two-hand blocks while
+        following visual and voice cues.
       </p>
       <p class="lead">
         It is designed for people who want a more active way to play and move, including those searching for a <strong>volleyball game</strong>, <strong>interactive volleyball app</strong>,
@@ -160,8 +188,8 @@
 
   <section>
     <div class="wrap">
-      <h2 class="sectionTitle">Interactive volleyball built around real body movement</h2>
-      <p class="sub">VolleyMotion turns your phone into an interactive volleyball setup that encourages real body movement. Players use camera-visible motion, reaction timing, arm swings, jumps and blocks to stay active while playing.</p>
+      <h2 class="sectionTitle">Real body movement meets interactive volleyball</h2>
+      <p class="sub">VolleyMotion creates an interactive volleyball setup around real body movement. Players physically swing, jump and block in front of the camera, making gameplay more active and fitness-oriented while still being a game.</p>
       <div class="grid">
         <div class="card"><h3>📷 Camera Volleyball Game</h3><p>Use the front camera so the game can respond to visible body and arm movement.</p></div>
         <div class="card"><h3>🏐 Spike & Hit</h3><p>Make a fresh arm swing when the action calls for a volleyball hit or spike-style movement.</p></div>

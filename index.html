@@ -8,6 +8,7 @@
   <meta name="description" content="VolleyMotion is an interactive volleyball motion game using your phone camera. Swing, jump, block and react to voice and visual cues in an active volleyball game for iPhone and Android.">
   <meta name="keywords" content="VolleyMotion, Volley Motion, volleyball app, volleyball game, mobile volleyball game, interactive volleyball, volleyball fitness game, volleyball exercise game, motion volleyball game, camera volleyball game, movement volleyball game, active volleyball game, virtual volleyball game, volleyball simulator, volleyball training game, volleyball reaction game, volleyball timing game, jump volleyball game, spike volleyball game, block volleyball game, volleyball practice app, sports motion game, motion fitness game, camera fitness game, active mobile game, movement game, exercise game, fitness game, sports fitness app, body movement game, jump game, arm swing game, reaction game, timing game, sports game, volleyball for iPhone, volleyball for Android, phone camera game, front camera game, motion tracking game, interactive sports game, at home volleyball game, indoor active game, family fitness game, active play game">
 
+  <meta name="apple-itunes-app" content="app-id=6806100721">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://rightfreelancer7.github.io/volleymotion/">
 
@@ -82,7 +83,7 @@
     .tag{display:inline-block;padding:8px 13px;border-radius:999px;border:1px solid rgba(86,186,255,.3);background:rgba(86,186,255,.1);font-size:12px;font-weight:850;letter-spacing:.07em}
     h1{font-size:clamp(48px,7vw,80px);line-height:.98;letter-spacing:-3px;margin:17px 0}.accent{color:var(--yellow)}
     .lead{font-size:18px;line-height:1.7;color:var(--muted)}.trial{font-weight:800;color:#dff3ff}
-    .stores{display:flex;flex-wrap:wrap;gap:13px;margin-top:22px}.btn{display:flex;align-items:center;gap:12px;min-width:230px;background:#fff;color:#111;text-decoration:none;padding:13px 17px;border-radius:16px;box-shadow:0 13px 30px rgba(0,0,0,.25)}.btn span{font-size:28px}.btn small{display:block;color:#56616c}.btn strong{display:block;font-size:18px}
+    
     .visual{background:rgba(255,255,255,.07);border:1px solid var(--line);padding:12px;border-radius:28px;box-shadow:0 25px 70px rgba(0,0,0,.3)}.visual img{width:100%;display:block;border-radius:20px}
     section{padding:58px 0}.sectionTitle{font-size:clamp(32px,5vw,45px);letter-spacing:-1.3px;margin:0 0 12px}.sub{color:var(--muted);line-height:1.7;max-width:820px}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{border:1px solid var(--line);background:rgba(255,255,255,.07);border-radius:21px;padding:22px}.card h3{margin-top:0}.card p{color:var(--muted);line-height:1.55}
@@ -90,7 +91,30 @@
     .faq details{border:1px solid var(--line);background:rgba(255,255,255,.07);border-radius:16px;padding:18px;margin:10px 0}.faq summary{font-weight:800;cursor:pointer}.faq p{color:var(--muted);line-height:1.6}
     .youtube{display:inline-flex;background:#ff1717;color:#fff;text-decoration:none;border-radius:14px;padding:15px 20px;font-weight:850;margin-top:20px}
     footer{padding:28px 0 40px;text-align:center;color:#8ca7bc;border-top:1px solid var(--line)}
-    @media(max-width:850px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}@media(max-width:540px){.stores{flex-direction:column}.btn{width:100%;min-width:0}}
+    @media(max-width:850px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}@media(max-width:540px){}
+  
+    .stores{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px;align-items:center}
+    .store-badge-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      line-height:0;
+      transition:transform .18s ease,opacity .18s ease;
+    }
+    .store-badge-link:hover{transform:translateY(-2px);opacity:.94}
+    .store-badge{
+      display:block;
+      width:auto;
+      height:54px;
+      max-width:100%;
+      object-fit:contain;
+    }
+    @media(max-width:540px){
+      .stores{align-items:flex-start}
+      .store-badge{height:50px}
+    }
+
   </style>
 </head>
 <body>
@@ -103,18 +127,31 @@
       <h1>Move.<br>Jump.<br><span class="accent">Play.</span></h1>
       <p class="lead">
         <strong>VolleyMotion</strong> is an interactive volleyball game that combines mobile gameplay with real movement.
-        Use your phone camera, follow visual and voice cues, swing your arm to hit, jump for high balls and raise both hands to block.
+        Using your phone camera, you respond with real movements such as arm swings, jumps and two-hand blocks while following visual and voice cues.
       </p>
       <p class="lead">
-        It is designed for people searching for a <strong>volleyball game</strong>, <strong>interactive volleyball app</strong>,
+        It is designed for people who want a more active way to play and move, including those searching for a <strong>volleyball game</strong>, <strong>interactive volleyball app</strong>,
         <strong>camera volleyball game</strong>, <strong>motion game</strong>, <strong>active mobile game</strong>,
         <strong>volleyball fitness game</strong>, <strong>movement game</strong>, <strong>reaction game</strong> or
         <strong>timing-based sports game</strong>.
       </p>
       <div class="trial">14-day free trial • iPhone and Android</div>
       <div class="stores" id="download">
-        <a class="btn" href="https://apps.apple.com/app/id6806100721"><span></span><div><small>Download on the</small><strong>App Store</strong></div></a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.its7.volleymotion"><span>▶</span><div><small>Get it on</small><strong>Google Play</strong></div></a>
+        <a class="store-badge-link"
+           href="https://apps.apple.com/app/id6806100721"
+           aria-label="Download VolleyMotion on the App Store">
+          <img class="store-badge"
+               src="apple.svg"
+               alt="Download on the App Store">
+        </a>
+
+        <a class="store-badge-link"
+           href="https://play.google.com/store/apps/details?id=com.its7.volleymotion"
+           aria-label="Get VolleyMotion on Google Play">
+          <img class="store-badge"
+               src="googleplay.png"
+               alt="Get it on Google Play">
+        </a>
       </div>
       <a class="youtube" href="https://youtube.com/shorts/3Ug2-MJWi7o?si=rv38Kv5SvNKEaK70" target="_blank" rel="noopener">▶ Watch VolleyMotion on YouTube</a>
     </div>
@@ -123,8 +160,8 @@
 
   <section>
     <div class="wrap">
-      <h2 class="sectionTitle">An active volleyball game controlled by movement</h2>
-      <p class="sub">VolleyMotion turns your phone into an interactive sports experience using camera-visible motion, reaction timing, arm swings, jumps and blocks.</p>
+      <h2 class="sectionTitle">Interactive volleyball built around real body movement</h2>
+      <p class="sub">VolleyMotion turns your phone into an interactive volleyball setup that encourages real body movement. Players use camera-visible motion, reaction timing, arm swings, jumps and blocks to stay active while playing.</p>
       <div class="grid">
         <div class="card"><h3>📷 Camera Volleyball Game</h3><p>Use the front camera so the game can respond to visible body and arm movement.</p></div>
         <div class="card"><h3>🏐 Spike & Hit</h3><p>Make a fresh arm swing when the action calls for a volleyball hit or spike-style movement.</p></div>
@@ -162,7 +199,7 @@
       <h2 class="sectionTitle">VolleyMotion FAQ</h2>
       <details><summary>What is VolleyMotion?</summary><p>VolleyMotion is an interactive volleyball motion game that uses the phone camera and real movement during gameplay.</p></details>
       <details><summary>What movements does VolleyMotion use?</summary><p>Gameplay includes arm swings for hits, jumps for higher actions and two-hand block movements, guided by visual and voice cues.</p></details>
-      <details><summary>Is VolleyMotion a fitness app?</summary><p>VolleyMotion is an active movement-based game. It encourages physical participation, but it is presented as a game rather than a medical or health-measurement product.</p></details>
+      <details><summary>Is VolleyMotion a fitness app?</summary><p>VolleyMotion is an active movement-based game intended to encourage physical activity through interactive volleyball play. It is not a medical or health-measurement product.</p></details>
       <details><summary>Can I play VolleyMotion on Android and iPhone?</summary><p>Yes. VolleyMotion has store links for both Google Play and the Apple App Store.</p></details>
     </div>
   </section>

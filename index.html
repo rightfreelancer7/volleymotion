@@ -6,7 +6,7 @@
 
   <title>VolleyMotion - Camera-Based Mobile Volleyball Game for iPhone & Android</title>
   <meta name="description" content="VolleyMotion is a camera-based mobile volleyball game for iPhone and Android. Use camera-visible body movement to swing, jump, hit and block in interactive volleyball gameplay.">
-  <meta name="keywords" content="VolleyMotion, Volley Motion, camera based mobile game, camera-based mobile game, camera based volleyball game, camera volleyball game, motion controlled mobile game, motion controlled volleyball game, interactive volleyball game, body movement mobile game, movement controlled game, mobile volleyball game, volleyball app, volleyball game for Android, volleyball game for iPhone">
+  <meta name="keywords" content="VolleyMotion, Volley Motion, camera based mobile game, camera-based mobile game, camera based volleyball game, camera volleyball game, motion controlled mobile game, motion controlled volleyball game, interactive volleyball game, body movement mobile game, movement controlled game, mobile volleyball game, volleyball app, volleyball game for Android, volleyball game for iPhone, body tracking mobile game, body tracking game, camera body tracking game, body tracking volleyball game, mobile body tracking game">
 
   <meta name="apple-itunes-app" content="app-id=6806100721">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
@@ -39,7 +39,7 @@
       "https://apps.apple.com/app/id6806100721",
       "https://play.google.com/store/apps/details?id=com.its7.volleymotion"
     ],
-    "keywords":"VolleyMotion, camera based mobile game, camera based volleyball game, motion controlled mobile game, interactive volleyball game, body movement mobile game, camera volleyball game, mobile volleyball game"
+    "keywords":"VolleyMotion, camera based mobile game, camera based volleyball game, motion controlled mobile game, interactive volleyball game, body movement mobile game, camera volleyball game, mobile volleyball game, body tracking mobile game, body tracking game, camera body tracking game, body tracking volleyball game, mobile body tracking game"
   }
   </script>
 
@@ -326,6 +326,12 @@
   }
 }
 
+
+/* Store buttons in top navigation */
+.top-store-buttons{display:flex;align-items:center;gap:10px;margin-left:auto}
+.top-store-buttons .store-badge{height:38px!important;width:auto!important}
+@media(max-width:620px){.top-store-buttons{display:none}}
+
 </style>
 </head>
 <body>
@@ -333,7 +339,14 @@
   
 
 <header><div class="wrap"><nav><div class="brand">🏐 VolleyMotion</div>
-<a class="navlink" href="#download">Download</a></nav></div></header>
+<div class="top-store-buttons" aria-label="Download VolleyMotion">
+  <a class="store-badge-link" href="https://apps.apple.com/app/id6806100721" aria-label="Download VolleyMotion on the App Store">
+    <img class="store-badge" src="apple.svg" alt="Download on the App Store">
+  </a>
+  <a class="store-badge-link" href="https://play.google.com/store/apps/details?id=com.its7.volleymotion" aria-label="Get VolleyMotion on Google Play">
+    <img class="store-badge" src="googleplay.png" alt="Get it on Google Play">
+  </a>
+</div></nav></div></header>
 
 <main>
   <div class="wrap hero">
